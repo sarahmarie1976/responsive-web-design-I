@@ -101,23 +101,25 @@ html, body{
 	box-sizing: border-box;  
 }
 
+.container .navigation {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  text-align: center;
+}
+
 .navigation a {
-	  width: 100px;
-	  height: 20px;
-	  padding: 20px;
     color: #C0C0C0;
     text-decoration: none;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 
 }	
 
-.navigation {
-    display: flex;
-    flex-flow: row wrap;
-	  justify-content: space-between;
+.navigation .logo {
 	  padding: 20px 10px;
 	  border-radius: 20px;
 	  color:#C0C0C0;
@@ -154,7 +156,7 @@ button:hover {
 
 .container_inner_box1 .image1 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 
@@ -171,9 +173,9 @@ button:hover {
   width: 50%;
   height: 50%;
   font-size: 45px;
-  margin: 20px;
-  margin-left: 60px;
-  padding: 20px;
+  margin: 5px;
+  margin-left: 5px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -255,7 +257,8 @@ footer {
 }
 
 address p {
-	line-height: 1px;
+  line-height: 1px;
+  
 }
 
 
@@ -267,22 +270,17 @@ address p {
     box-sizing: border-box;
   }
 
-  .navigation {
-    font-size: 14px;
-    display: flex;
-    flex-wrap: inherit;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 25px;
-    margin-bottom: 0;
+  .container .navigation {
+    flex-direction: row-reverse;
+   
   }
  
-  .container .navigation .logo {
-    margin: 20px;
+  .container .navigation  {
+    margin: 30px;
   }
 
   .logo {
-    margin: 20px;
+    margin-bottom: 300px;
     padding: 20px;
     position: absolute;
     width: 200px;
@@ -293,13 +291,14 @@ address p {
   }
 
   .container_inner_box1 {
+    margin-top: 50px;
     font-size: 55px;
     display: flex;
     justify-content: center;
   }
   
   .container_inner_box1 {
-    margin-top: -100px;
+    margin-top: -40px;
   }
 
   .container_inner_box1 .item h2 {
@@ -351,22 +350,17 @@ address p {
     box-sizing: border-box;
   }
 
-  .navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
+  .container .navigation {
+    margin: 40px;
     margin-bottom: 0;
   }
 
   .container .navigation a {
     border-top: 1px solid black;
-    border-top: 1px solid black;
-  }
-
-  .container .navigation .logo {
-    margin: 10px;
+    line-height:  28px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;;
   }
 
   .logo {
